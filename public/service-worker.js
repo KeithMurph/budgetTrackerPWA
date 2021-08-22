@@ -25,7 +25,7 @@ self.addEventListener("install", function (evt) {
   );
 
  
-  console.log('service worker running');
+  console.log('Working!');
   self.skipWaiting();
 });
 
@@ -35,7 +35,7 @@ self.addEventListener("activate", function (evt) {
       return Promise.all(
         keyList.map((key) => {
           if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
-            console.log("Removing old cache data", key);
+            console.log("Cache cleared", key);
             return caches.delete(key);
           }
         })
