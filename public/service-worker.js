@@ -16,7 +16,7 @@ const FILES_TO_CACHE = [
 self.addEventListener("install", function (evt) {
 
   evt.waitUntil(
-    caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/transaction"))
+    caches.open(CACHE_NAME).then((cache) => cache.add("/api/transaction"))
   );
 
 
@@ -53,9 +53,7 @@ self.addEventListener("fetch", function (evt) {
       caches
         .open(DATA_CACHE_NAME)
         .then((cache) => {
-          return fetch(evt.request)
-            .then((response) => {
-              
+          return fetch(evt.request).then((response) => {
               if (response.status === 200) {
                 cache.put(evt.request.url, response.clone());
               }
