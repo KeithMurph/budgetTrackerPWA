@@ -20,7 +20,7 @@ Deployed link - https://budget-tracker-pwa-kmurph.herokuapp.com/
  - [Installation](#howToInstall)
  - [Usage](#usage)
  - [Credits](#credits)
- - [Licence](#license)
+ - [License](#license)
  - [Questions](#questions)
 
  ## Installation
