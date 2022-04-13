@@ -1,11 +1,36 @@
+html {
+
+}
 body {
   font-size: 120%;
   font-family: Arial;
+
 }
 
-button, input {
-  font-size: 100%;
-  font-family: Arial;
+button {
+  width: 150px;
+  height: 45px;
+  border-radius: 45px;
+  cursor: pointer;
+  border: none;
+ 
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: Opx 8px 15px rgba (0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #328b51;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
+
+}
+#sub-btn:hover {
+  background: #af3e2d;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
 }
 
 table {
