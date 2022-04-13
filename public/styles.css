@@ -17,14 +17,14 @@ button {
   box-shadow: 0px 0px 5px #000000;
   transition: all 0.3s ease;
 }
-button:hover {
+button:hover, button:focus  {
   background: #328b51;
   transform: translateY(-2px);
   color: #fff;
   box-shadow: 0px 0px 10px #000000;
 
 }
-#sub-btn:hover {
+#sub-btn:hover, #sub-btn:focus {
   background: #af3e2d;
   transform: translateY(-2px);
   color: #fff;
@@ -93,11 +93,12 @@ input {
   color: #000;
   text-align: center;
 }
-input:hover {
+input:hover, input:focus {    
   background: #9f9f9f35;
   color: rgb(0, 0, 0);
   box-shadow: 2px 2px 10px #000000;
 
 
 }
+
 
