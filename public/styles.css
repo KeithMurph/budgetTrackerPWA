@@ -6,7 +6,7 @@ body {
 }
 
 button {
-  width: 20%;
+  width: fit-content;
   height: 45px;
   border-radius: 45px;
   cursor: pointer;
