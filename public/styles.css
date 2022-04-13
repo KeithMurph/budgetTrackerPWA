@@ -92,6 +92,7 @@ input {
   transition: all 0.3s ease;
   color: #000;
   text-align: center;
+  margin: auto;
 }
 input:hover, input:focus {    
   background: #9f9f9f35;
