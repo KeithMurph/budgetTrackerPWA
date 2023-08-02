@@ -20,6 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/budget', {
   useFindAndModify: false,
   useCreateIndex: true,
   useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 
